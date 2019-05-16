@@ -1,0 +1,113 @@
+{
+  "buildFiles": [
+    "E:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\Android.mk",
+    "E:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\GSU\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dE:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dE:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003dE:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dE:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\build\\intermediates\\ndkBuild\\release\\lib clean"
+  ],
+  "libraries": {
+    "mp3lame-release-armeabi-v7a": {
+      "buildCommand": "C:\\Users\\GSU\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dE:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dE:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003dE:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dE:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\build\\intermediates\\ndkBuild\\release\\lib E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libmp3lame.so",
+      "toolchain": "toolchain-armeabi-v7a",
+      "abi": "armeabi-v7a",
+      "artifactName": "mp3lame",
+      "files": [
+        {
+          "src": "E:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\com_uraroji_garage_android_lame_SimpleLame.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/GSU/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -mfpu\u003dvfpv3-d16 -march\u003darmv7-a -mthumb -Oz -DNDEBUG -IE:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni -DSTDC_HEADERS -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "E:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\lame-3.98.4_libmp3lame\\VbrTag.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/GSU/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -mfpu\u003dvfpv3-d16 -march\u003darmv7-a -mthumb -Oz -DNDEBUG -IE:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni -DSTDC_HEADERS -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "E:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\lame-3.98.4_libmp3lame\\bitstream.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/GSU/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -mfpu\u003dvfpv3-d16 -march\u003darmv7-a -mthumb -Oz -DNDEBUG -IE:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni -DSTDC_HEADERS -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "E:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\lame-3.98.4_libmp3lame\\encoder.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/GSU/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -mfpu\u003dvfpv3-d16 -march\u003darmv7-a -mthumb -Oz -DNDEBUG -IE:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni -DSTDC_HEADERS -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "E:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\lame-3.98.4_libmp3lame\\fft.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/GSU/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -mfpu\u003dvfpv3-d16 -march\u003darmv7-a -mthumb -Oz -DNDEBUG -IE:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni -DSTDC_HEADERS -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "E:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\lame-3.98.4_libmp3lame\\gain_analysis.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/GSU/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -mfpu\u003dvfpv3-d16 -march\u003darmv7-a -mthumb -Oz -DNDEBUG -IE:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni -DSTDC_HEADERS -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "E:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\lame-3.98.4_libmp3lame\\id3tag.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/GSU/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -mfpu\u003dvfpv3-d16 -march\u003darmv7-a -mthumb -Oz -DNDEBUG -IE:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni -DSTDC_HEADERS -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "E:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\lame-3.98.4_libmp3lame\\lame.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/GSU/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -mfpu\u003dvfpv3-d16 -march\u003darmv7-a -mthumb -Oz -DNDEBUG -IE:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni -DSTDC_HEADERS -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "E:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\lame-3.98.4_libmp3lame\\mpglib_interface.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/GSU/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -mfpu\u003dvfpv3-d16 -march\u003darmv7-a -mthumb -Oz -DNDEBUG -IE:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni -DSTDC_HEADERS -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "E:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\lame-3.98.4_libmp3lame\\newmdct.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/GSU/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -mfpu\u003dvfpv3-d16 -march\u003darmv7-a -mthumb -Oz -DNDEBUG -IE:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni -DSTDC_HEADERS -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "E:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\lame-3.98.4_libmp3lame\\presets.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/GSU/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -mfpu\u003dvfpv3-d16 -march\u003darmv7-a -mthumb -Oz -DNDEBUG -IE:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni -DSTDC_HEADERS -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "E:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\lame-3.98.4_libmp3lame\\psymodel.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/GSU/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -mfpu\u003dvfpv3-d16 -march\u003darmv7-a -mthumb -Oz -DNDEBUG -IE:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni -DSTDC_HEADERS -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "E:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\lame-3.98.4_libmp3lame\\quantize.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/GSU/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -mfpu\u003dvfpv3-d16 -march\u003darmv7-a -mthumb -Oz -DNDEBUG -IE:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni -DSTDC_HEADERS -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "E:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\lame-3.98.4_libmp3lame\\quantize_pvt.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/GSU/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -mfpu\u003dvfpv3-d16 -march\u003darmv7-a -mthumb -Oz -DNDEBUG -IE:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni -DSTDC_HEADERS -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "E:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\lame-3.98.4_libmp3lame\\reservoir.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/GSU/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -mfpu\u003dvfpv3-d16 -march\u003darmv7-a -mthumb -Oz -DNDEBUG -IE:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni -DSTDC_HEADERS -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "E:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\lame-3.98.4_libmp3lame\\set_get.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/GSU/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -mfpu\u003dvfpv3-d16 -march\u003darmv7-a -mthumb -Oz -DNDEBUG -IE:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni -DSTDC_HEADERS -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "E:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\lame-3.98.4_libmp3lame\\tables.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/GSU/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -mfpu\u003dvfpv3-d16 -march\u003darmv7-a -mthumb -Oz -DNDEBUG -IE:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni -DSTDC_HEADERS -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "E:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\lame-3.98.4_libmp3lame\\takehiro.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/GSU/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -mfpu\u003dvfpv3-d16 -march\u003darmv7-a -mthumb -Oz -DNDEBUG -IE:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni -DSTDC_HEADERS -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "E:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\lame-3.98.4_libmp3lame\\util.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/GSU/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -mfpu\u003dvfpv3-d16 -march\u003darmv7-a -mthumb -Oz -DNDEBUG -IE:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni -DSTDC_HEADERS -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "E:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\lame-3.98.4_libmp3lame\\vbrquantize.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/GSU/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -mfpu\u003dvfpv3-d16 -march\u003darmv7-a -mthumb -Oz -DNDEBUG -IE:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni -DSTDC_HEADERS -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        },
+        {
+          "src": "E:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\src\\main\\jni\\lame-3.98.4_libmp3lame\\version.c",
+          "flags": "-target armv7-none-linux-androideabi16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/GSU/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fpic -mfpu\u003dvfpv3-d16 -march\u003darmv7-a -mthumb -Oz -DNDEBUG -IE:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni -DSTDC_HEADERS -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security"
+        }
+      ],
+      "output": "E:\\SERVER_TEMP\\Work_AdBlockTV\\Mp3VoiceRecorderSampleForAndroid1\\app\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a\\libmp3lame.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-armeabi-v7a": {
+      "cCompilerExecutable": "C:\\Users\\GSU\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

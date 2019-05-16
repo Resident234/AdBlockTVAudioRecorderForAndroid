@@ -1,0 +1,230 @@
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/bitstream.c:835:16: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+        assert(NEQ(RadioGain, GAIN_NOT_ENOUGH_SAMPLES));
+               ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/machine.h:175:20: note: expanded from macro 'NEQ'
+#define NEQ(a,b) (!EQ(a,b))
+                   ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/machine.h:168:12: note: expanded from macro 'EQ'
+(fabs(a) > fabs(b)) \
+           ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/bitstream.c:835:16: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/machine.h:175:20: note: expanded from macro 'NEQ'
+#define NEQ(a,b) (!EQ(a,b))
+                   ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/machine.h:170:23: note: expanded from macro 'EQ'
+ : (fabs((a)-(b)) <= (fabs(b) * 1e-6f)))
+                      ^
+2 warnings generated.
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/presets.c:145:5: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+    SET_OPTION(quant_comp, set->quant_comp, -1);
+    ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/presets.c:36:16: note: expanded from macro 'SET_OPTION'
+    else if (!(fabs(lame_get_##opt(gfp) - def) > 0)) \
+               ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/presets.c:146:5: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+    SET_OPTION(quant_comp_short, set->quant_comp_s, -1);
+    ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/presets.c:36:16: note: expanded from macro 'SET_OPTION'
+    else if (!(fabs(lame_get_##opt(gfp) - def) > 0)) \
+               ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/presets.c:259:5: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+    SET_OPTION(quant_comp, abr_switch_map[r].quant_comp, -1);
+    ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/presets.c:36:16: note: expanded from macro 'SET_OPTION'
+    else if (!(fabs(lame_get_##opt(gfp) - def) > 0)) \
+               ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/presets.c:260:5: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+    SET_OPTION(quant_comp_short, abr_switch_map[r].quant_comp_s, -1);
+    ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/presets.c:36:16: note: expanded from macro 'SET_OPTION'
+    else if (!(fabs(lame_get_##opt(gfp) - def) > 0)) \
+               ^
+4 warnings generated.
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:263:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[0], 8u, 0xffu);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:265:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[1], 3u, 7);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:266:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[1], 1u, (gfp->out_samplerate < 16000) ? 0 : 1);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:267:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[1], 1u, gfp->version);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:268:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[1], 2u, 4 - 3);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:269:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[1], 1u, (!gfp->error_protection) ? 1 : 0);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:271:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[2], 4u, gfc->bitrate_index);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:272:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[2], 2u, gfc->samplerate_index);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:273:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[2], 1u, 0);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:274:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[2], 1u, gfp->extension);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:276:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[3], 2u, gfp->mode);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:277:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[3], 2u, gfc->mode_ext);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:278:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[3], 1u, gfp->copyright);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:279:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[3], 1u, gfp->original);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:280:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[3], 2u, gfp->emphasis);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/VbrTag.c:421:23: warning: comparison of array 'pTagData->toc' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+        if (pTagData->toc != NULL) {
+            ~~~~~~~~~~^~~    ~~~~
+16 warnings generated.
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/lame.c:597:13: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+        if (EQ(gfp->compression_ratio, 0))
+            ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/machine.h:168:12: note: expanded from macro 'EQ'
+(fabs(a) > fabs(b)) \
+           ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/lame.c:597:13: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/machine.h:170:23: note: expanded from macro 'EQ'
+ : (fabs((a)-(b)) <= (fabs(b) * 1e-6f)))
+                      ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/lame.c:1553:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+    if (NEQ(gfp->scale, 0) && NEQ(gfp->scale, 1.0)) {
+        ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/machine.h:175:20: note: expanded from macro 'NEQ'
+#define NEQ(a,b) (!EQ(a,b))
+                   ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/machine.h:168:12: note: expanded from macro 'EQ'
+(fabs(a) > fabs(b)) \
+           ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/lame.c:1553:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/machine.h:175:20: note: expanded from macro 'NEQ'
+#define NEQ(a,b) (!EQ(a,b))
+                   ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/machine.h:170:23: note: expanded from macro 'EQ'
+ : (fabs((a)-(b)) <= (fabs(b) * 1e-6f)))
+                      ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/lame.c:1562:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+    if (NEQ(gfp->scale_left, 0) && NEQ(gfp->scale_left, 1.0)) {
+        ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/machine.h:175:20: note: expanded from macro 'NEQ'
+#define NEQ(a,b) (!EQ(a,b))
+                   ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/machine.h:168:12: note: expanded from macro 'EQ'
+(fabs(a) > fabs(b)) \
+           ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/lame.c:1562:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/machine.h:175:20: note: expanded from macro 'NEQ'
+#define NEQ(a,b) (!EQ(a,b))
+                   ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/machine.h:170:23: note: expanded from macro 'EQ'
+ : (fabs((a)-(b)) <= (fabs(b) * 1e-6f)))
+                      ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/lame.c:1569:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+    if (NEQ(gfp->scale_right, 0) && NEQ(gfp->scale_right, 1.0)) {
+        ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/machine.h:175:20: note: expanded from macro 'NEQ'
+#define NEQ(a,b) (!EQ(a,b))
+                   ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/machine.h:168:12: note: expanded from macro 'EQ'
+(fabs(a) > fabs(b)) \
+           ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/lame.c:1569:9: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/machine.h:175:20: note: expanded from macro 'NEQ'
+#define NEQ(a,b) (!EQ(a,b))
+                   ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/machine.h:170:23: note: expanded from macro 'EQ'
+ : (fabs((a)-(b)) <= (fabs(b) * 1e-6f)))
+                      ^
+8 warnings generated.
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/quantize_pvt.c:664:23: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+        while (k-- && EQ(xr[k], 0)) {
+                      ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/machine.h:168:12: note: expanded from macro 'EQ'
+(fabs(a) > fabs(b)) \
+           ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/quantize_pvt.c:664:23: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/machine.h:170:23: note: expanded from macro 'EQ'
+ : (fabs((a)-(b)) <= (fabs(b) * 1e-6f)))
+                      ^
+2 warnings generated.
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/set_get.c:1460:68: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+    assert((0 <= gfp->interChRatio && gfp->interChRatio <= 1.0) || EQ(gfp->interChRatio, -1));
+                                                                   ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/machine.h:168:12: note: expanded from macro 'EQ'
+(fabs(a) > fabs(b)) \
+           ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/set_get.c:1460:68: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/machine.h:170:23: note: expanded from macro 'EQ'
+ : (fabs((a)-(b)) <= (fabs(b) * 1e-6f)))
+                      ^
+2 warnings generated.
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/com_uraroji_garage_android_lame_SimpleLame.c:33:13: warning: passing 'jbyte *' (aka 'signed char *') to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                        samples, j_mp3buf, mp3buf_size);
+                                 ^~~~~~~~
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/lame.h:714:29: note: passing argument to parameter 'mp3buf' here
+        unsigned char*      mp3buf,        /* pointer to encoded MP3 stream */
+                            ^
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/com_uraroji_garage_android_lame_SimpleLame.c:47:38: warning: passing 'jbyte *' (aka 'signed char *') to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        int result = lame_encode_flush(glf, j_mp3buf, mp3buf_size);
+                                            ^~~~~~~~
+E:/SERVER_TEMP/Work_AdBlockTV/Mp3VoiceRecorderSampleForAndroid1/app/src/main/jni/lame-3.98.4_libmp3lame/lame.h:817:30: note: passing argument to parameter 'mp3buf' here
+        unsigned char*       mp3buf, /* pointer to encoded MP3 stream         */
+                             ^
+2 warnings generated.
