@@ -27,22 +27,30 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Calendar;
+
 public class MainActivity extends Activity {
+
+	private static final String TAG = MainActivity.class.getSimpleName();
+
+	private Calendar rightNow = Calendar.getInstance();
 
 	// エミュレータではマイクからの入力サンプリングレートは8KHzしかサポートしていない模様
 	private RecMicToMp3 mRecMicToMp3 = new RecMicToMp3(
-			Environment.getExternalStorageDirectory() + "/mezzo.mp3", 8000);
+			Environment.getExternalStorageDirectory() + "", 8000);
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
+		Log.i(TAG, "onCreate");
 
 		final TextView statusTextView = (TextView) findViewById(R.id.StatusTextView);
 
@@ -69,7 +77,7 @@ public class MainActivity extends Activity {
 					break;
 				case RecMicToMp3.MSG_ERROR_REC_START:
 					statusTextView.setText("");
-					Toast.makeText(MainActivity.this, "録音が開始できませんでした",
+					Toast.makeText(MainActivity.this, "Не удалось начать запись",
 							Toast.LENGTH_LONG).show();
 					break;
 				case RecMicToMp3.MSG_ERROR_AUDIO_RECORD:

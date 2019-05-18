@@ -27,11 +27,13 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.security.InvalidParameterException;
+import java.util.Calendar;
 
 import android.media.AudioFormat;
 import android.media.AudioRecord;
 import android.media.MediaRecorder;
 import android.os.Handler;
+import android.util.Log;
 
 import com.uraroji.garage.android.lame.SimpleLame;
 
@@ -45,6 +47,10 @@ public class RecMicToMp3 {
 	static {
 		System.loadLibrary("mp3lame");
 	}
+
+	private static final String TAG = RecMicToMp3.class.getSimpleName();
+
+	private Calendar rightNow = Calendar.getInstance();
 
 	/**
 	 * MP3ファイルを保存するファイルパス
@@ -121,6 +127,7 @@ public class RecMicToMp3 {
 	 */
 	public static final int MSG_ERROR_CLOSE_FILE = 8;
 
+
 	/**
 	 * コンストラクタ
 	 * 
@@ -134,6 +141,8 @@ public class RecMicToMp3 {
 			throw new InvalidParameterException(
 					"Invalid sample rate specified.");
 		}
+		Log.i(TAG, filePath);
+
 		this.mFilePath = filePath;
 		this.mSampleRate = sampleRate;
 	}
@@ -146,6 +155,7 @@ public class RecMicToMp3 {
 		if (mIsRecording) {
 			return;
 		}
+
 
 		// 録音を別スレッドで開始する
 		new Thread() {
@@ -175,9 +185,10 @@ public class RecMicToMp3 {
 				short[] buffer = new short[mSampleRate * (16 / 8) * 1 * 5]; // SampleRate[Hz] * 16bit * Mono * 5sec
 				byte[] mp3buffer = new byte[(int) (7200 + buffer.length * 2 * 1.25)];
 
+				Log.i(TAG, System.currentTimeMillis()/1000 + "");
 				FileOutputStream output = null;
 				try {
-					output = new FileOutputStream(new File(mFilePath));
+					output = new FileOutputStream(new File(mFilePath + "/recording" + System.currentTimeMillis()/1000 + ".mp3"));
 				} catch (FileNotFoundException e) {
 					// ファイルが生成できない
 					if (mHandler != null) {
