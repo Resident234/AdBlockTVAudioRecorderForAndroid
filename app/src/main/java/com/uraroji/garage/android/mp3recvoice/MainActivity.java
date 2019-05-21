@@ -34,6 +34,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.IOException;
+import java.lang.ref.WeakReference;
 import java.util.Calendar;
 
 public class MainActivity extends Activity {
@@ -42,8 +44,12 @@ public class MainActivity extends Activity {
 
 	private Calendar rightNow = Calendar.getInstance();
 
+	public static boolean isWatching = false;
+	public static boolean isRecording = false;
+	public static int intDelayMillis = 200;
+
 	// エミュレータではマイクからの入力サンプリングレートは8KHzしかサポートしていない模様
-	private RecMicToMp3 mRecMicToMp3 = new RecMicToMp3(
+	private static RecMicToMp3 mRecMicToMp3 = new RecMicToMp3(
 			Environment.getExternalStorageDirectory() + "", 8000);
 
 	@Override
@@ -110,14 +116,19 @@ public class MainActivity extends Activity {
 		startButton.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				mRecMicToMp3.start();
+				if(!isWatching) {
+					isWatching = true;
+					watching();
+				}
+				//mRecMicToMp3.start();
 			}
 		});
 		Button stopButton = (Button) findViewById(R.id.StopButton);
 		stopButton.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				mRecMicToMp3.stop();
+				if(isWatching) isWatching = false;
+				//mRecMicToMp3.stop();
 			}
 		});
 	}
@@ -127,4 +138,70 @@ public class MainActivity extends Activity {
 		super.onDestroy();
 		mRecMicToMp3.stop();
 	}
+
+
+
+	private static class MyHandler extends Handler {}
+	private final MyHandler mHandler = new MyHandler();
+
+	public static class MyRunnable implements Runnable {
+		private final WeakReference<Activity> mActivity;
+
+		public MyRunnable(Activity activity) {
+			mActivity = new WeakReference<Activity>(activity);
+		}
+
+		@Override
+		public void run() {
+			Log.i(TAG,  "run");
+
+			Activity activity = mActivity.get();
+
+			Calendar rightNow = Calendar.getInstance();
+			if (activity != null) {
+
+				if(isRecording) {
+					try {
+						mRecMicToMp3.stop();
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+
+					Log.i(TAG,  rightNow.getTimeInMillis() + " stopRecording");
+					isRecording = false;
+					intDelayMillis = 200;
+					// send hashes to rest
+				} else {
+					try {
+						mRecMicToMp3.start();
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+
+					Log.i(TAG,  rightNow.getTimeInMillis() + " startRecording");
+					isRecording = true;
+					intDelayMillis = 2000;
+				}
+
+				if(isWatching) {
+					MyHandler mHandler = new MyHandler();
+					mHandler.postDelayed(this, intDelayMillis);
+				} else {
+					try {
+						mRecMicToMp3.stop();
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+					Log.i(TAG,  rightNow.getTimeInMillis() + " stopRecording");
+				}
+			}
+		}
+	}
+
+	private void watching() {
+		mHandler.postDelayed(mRunnable, intDelayMillis);
+	}
+
+	private MyRunnable mRunnable = new MyRunnable(this);
+
 }
