@@ -161,37 +161,25 @@ public class MainActivity extends Activity {
 			if (activity != null) {
 
 				if(isRecording) {
-					try {
-						mRecMicToMp3.stop();
-					} catch (IOException e) {
-						e.printStackTrace();
-					}
+					mRecMicToMp3.stop();
 
 					Log.i(TAG,  rightNow.getTimeInMillis() + " stopRecording");
 					isRecording = false;
-					intDelayMillis = 200;
+					intDelayMillis = 2000;
 					// send hashes to rest
 				} else {
-					try {
-						mRecMicToMp3.start();
-					} catch (IOException e) {
-						e.printStackTrace();
-					}
+					mRecMicToMp3.start();
 
 					Log.i(TAG,  rightNow.getTimeInMillis() + " startRecording");
 					isRecording = true;
-					intDelayMillis = 2000;
+					intDelayMillis = 20000;
 				}
 
 				if(isWatching) {
 					MyHandler mHandler = new MyHandler();
 					mHandler.postDelayed(this, intDelayMillis);
 				} else {
-					try {
-						mRecMicToMp3.stop();
-					} catch (IOException e) {
-						e.printStackTrace();
-					}
+					mRecMicToMp3.stop();
 					Log.i(TAG,  rightNow.getTimeInMillis() + " stopRecording");
 				}
 			}
