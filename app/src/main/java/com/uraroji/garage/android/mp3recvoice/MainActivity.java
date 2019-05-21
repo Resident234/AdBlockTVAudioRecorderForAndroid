@@ -144,6 +144,8 @@ public class MainActivity extends Activity {
 	private static class MyHandler extends Handler {}
 	private final MyHandler mHandler = new MyHandler();
 
+	private static String recordingID;
+
 	public static class MyRunnable implements Runnable {
 		private final WeakReference<Activity> mActivity;
 
@@ -162,10 +164,12 @@ public class MainActivity extends Activity {
 
 				if(isRecording) {
 					mRecMicToMp3.stop();
-
-					Log.i(TAG,  rightNow.getTimeInMillis() + " stopRecording");
+					recordingID = rightNow.getTimeInMillis() + "";
+					Log.i(TAG, recordingID + " stopRecording");
 					isRecording = false;
 					intDelayMillis = 2000;
+					listenSound(recordingID, false);
+
 					// send hashes to rest
 				} else {
 					mRecMicToMp3.start();
