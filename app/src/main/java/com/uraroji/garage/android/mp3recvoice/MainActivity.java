@@ -51,6 +51,7 @@ public class MainActivity extends Activity {
 	// エミュレータではマイクからの入力サンプリングレートは8KHzしかサポートしていない模様
 	private static RecMicToMp3 mRecMicToMp3 = new RecMicToMp3(
 			Environment.getExternalStorageDirectory() + "", 8000);
+	private static AudioRecognizer mAudioRecognizer = new AudioRecognizer();
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -145,6 +146,7 @@ public class MainActivity extends Activity {
 	private final MyHandler mHandler = new MyHandler();
 
 	private static String recordingID;
+	private static String filePath;
 
 	public static class MyRunnable implements Runnable {
 		private final WeakReference<Activity> mActivity;
@@ -164,14 +166,17 @@ public class MainActivity extends Activity {
 
 				if(isRecording) {
 					mRecMicToMp3.stop();
-					recordingID = rightNow.getTimeInMillis() + "";
 					Log.i(TAG, recordingID + " stopRecording");
 					isRecording = false;
 					intDelayMillis = 2000;
-					listenSound(recordingID, false);
+					//mAudioRecognizer.listenSound(recordingID, false, filePath);
 
 					// send hashes to rest
 				} else {
+					recordingID = System.currentTimeMillis() / 1000 + "";
+					filePath = Environment.getExternalStorageDirectory() + "/recording" + recordingID + ".mp3";
+
+					mRecMicToMp3.setFilePath(filePath);
 					mRecMicToMp3.start();
 
 					Log.i(TAG,  rightNow.getTimeInMillis() + " startRecording");

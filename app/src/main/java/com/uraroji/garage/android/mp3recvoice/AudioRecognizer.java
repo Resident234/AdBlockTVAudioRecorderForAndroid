@@ -114,7 +114,7 @@ public class AudioRecognizer {
     }*/
 
 
-    private void listenSound(long songId, boolean isMatching, String filePath)
+    public void listenSound(long songId, boolean isMatching, String filePath)
             throws LineUnavailableException, IOException,
             UnsupportedAudioFileException {
 

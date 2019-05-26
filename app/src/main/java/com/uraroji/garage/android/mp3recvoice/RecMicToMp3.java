@@ -55,7 +55,7 @@ public class RecMicToMp3 {
 	/**
 	 * MP3ファイルを保存するファイルパス
 	 */
-	private String mFilePath;
+	public String mFilePath;
 
 	/**
 	 * サンプリングレート
@@ -147,6 +147,10 @@ public class RecMicToMp3 {
 		this.mSampleRate = sampleRate;
 	}
 
+	public void setFilePath(String mFilePath) {
+		this.mFilePath = mFilePath;
+	}
+
 	/**
 	 * 録音を開始する
 	 */
@@ -185,10 +189,10 @@ public class RecMicToMp3 {
 				short[] buffer = new short[mSampleRate * (16 / 8) * 1 * 5]; // SampleRate[Hz] * 16bit * Mono * 5sec
 				byte[] mp3buffer = new byte[(int) (7200 + buffer.length * 2 * 1.25)];
 
-				Log.i(TAG, System.currentTimeMillis()/1000 + "");
+				Log.i(TAG, mFilePath + "");
 				FileOutputStream output = null;
 				try {
-					output = new FileOutputStream(new File(mFilePath + "/recording" + System.currentTimeMillis()/1000 + ".mp3"));
+					output = new FileOutputStream(new File(mFilePath));
 				} catch (FileNotFoundException e) {
 					// ファイルが生成できない
 					if (mHandler != null) {
